@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+}
+.map-container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}

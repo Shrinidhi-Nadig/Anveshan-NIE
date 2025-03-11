@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+}
+.row {
+    display: flex;
+    /* justify-content: space-between; */
+    gap:100px;
+    padding-top: 80px;
+    position: relative;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    /* padding-left: 100px; */
+}
+
+/* Circle div */
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 100px rgba(255, 255, 255, 0.6);
+}
+section{
+    width: 100%;
+    padding-left: 140px;
+    height: 1500px;
+}
+#r1{
+    padding-top: 50px;
+}
+.divsection{
+    position: relative;
+    text-align: center;
+}
+.heading{
+    position: absolute;
+    left: 140px;
+}::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}

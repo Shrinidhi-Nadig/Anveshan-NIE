@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+}
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+.hero-content {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.about, .events, .contact {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+.about h2, .events h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about p, .contact p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.events .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.events .event {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+#subscribe{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.subscribeemail{
+    width: 270px;
+    height: 40px;
+    border-color: rgb(255, 255, 255);
+    background-color: #333;
+    color: white;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}

@@ -1,0 +1,91 @@
+{% extends "Base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/static/css/blogs.css">
+    
+</head>
+<body>
+    {% comment %} {% include "Header.html" %}<br><br> {% endcomment %}
+    {% comment %} <marquee onmouseover="stop()" onmouseout="start()">
+        {% for news in newsData %}
+            <a href="/newsdetails/{{news.news_slug}}">{{news.news_title | safe}}</a> &nbsp;&nbsp;&nbsp;
+        {% endfor %}
+    </marquee> {% endcomment %}
+
+    <div class="mainblog">
+        <h1>Machine Learning vs. Traditional</h1>
+        <h1>Methods: When to Choose ML for</h1>
+        <h1>Complex Data</h1>
+        <h2 id="intro">Introduction</h2><br>
+        <div class="pfont">
+            <p>Machine learning (ML) is more than just a technological trend—it's a transformative tool that's</p>
+            <p>impacting industries from healthcare to finance. But the question remains: why is machine</p>
+            <p>learning so crucial today? And when should you choose ML over traditional methods? To</p>
+            <p>answer these questions, we need to explore the evolution of data analysis and the conditions</p>
+            <p>where machine learning provides an advantage.</p>
+        </div><br>
+        <h2>Historical Context: Traditional Data Analysis vs. Machine</h2>
+        <h2>Learning</h2><br>
+        <div class="pfont">
+            <p>Before the rise of machine learning, data was typically analyzed using classical methods such</p>
+            <p>as regression models and the Fourier series. These methods have been invaluable in helping us</p>
+            <p>make sense of data in fields like signal processing, physics, and economics.</p>
+        </div><br>
+        <h2>Fourier Series: A Traditional Approach to Periodic Data</h2><br>
+        <div class="pfont">
+            <p>The Fourier series has long been a cornerstone in fields like signal processing because it is</p>
+            <p>specifically designed for analyzing periodic data. It works by transforming a signal from the time</p>
+            <p>domain to the frequency domain, allowing us to study its periodic components.</p>
+        </div><br>
+        <img src="/Anveshan/img/fourier_series.gif" alt="fourier_series.gif">
+        <h4 id="h4">Figure 1. Fourier series approximation of square wave</h4><br>
+        <h2>When to Choose Machine Learning Over Traditional</h2>
+        <h2>Methods</h2><br>
+        <div class="pfont">
+            <p>While methods like the Fourier series work well for certain types of data, machine learning</p>
+            <p>offers much greater flexibility and power when dealing with complex, non-periodic, or</p>
+            <p>unstructured datasets...</p>
+        </div><br>
+        <h2>How Machine Learning Works</h2><br>
+        <div class="pfont">
+            <p>Machine learning doesn’t follow a one-size-fits-all approach. It’s a broad field involving various</p>
+            <p>techniques and algorithms that enable machines to learn from data...</p>
+        </div><br>
+        <h2>Applications of Machine Learning</h2><br>
+        <ul class="applicationlist">
+            <li>Healthcare</li>
+            <li>Finance</li>
+            <li>Retail</li>
+            <li>Manufacturing</li>
+            <li>Marketing</li>
+        </ul><br>
+        <h2>Conclusion</h2><br>
+        <div class="pfont">
+            <p>In summary, while traditional methods like Fourier series are invaluable when dealing with</p>
+            <p>periodic data, machine learning offers a far more flexible and powerful way to handle the</p>
+            <p>complexities of modern, unstructured data.</p>
+        </div>
+    </div>
+    <section id="home" class="hero">
+        <form method="post" action="{% url 'submitform' %}">
+            {% csrf_token %}
+            <div class="hero-content" id="subscribe">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest news, events, and insights by subscribing to our newsletter.</p>
+                <!-- <label for="">email</label> -->
+                <input class="subscribeemail" type="text" name="name" placeholder="Enter your Name" required><br><br>
+                <input class="subscribeemail" type="email" name="email" placeholder="Enter your email address" required><br><br>
+                <button type="submit" class="btn">Subscribe</button>
+            </div>
+        </form>
+    </section>
+
+    {% comment %} {% include "Footer.html"%} {% endcomment %}
+</body>
+</html>
+{% endblock  %}

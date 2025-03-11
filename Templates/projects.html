@@ -1,0 +1,88 @@
+{% extends "Base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/static/css/projects.css">
+    
+</head>
+<body>
+    {% comment %} {% include "Header.html" %} {% endcomment %}
+
+    <div class="heading">
+        <h1>Our Projects</h1><br>
+        <p>At ANVESHAN, we pride ourselves on tackling real-world challenges using cutting-</p>
+        <p>edge AI and ML technologies. Below are some of our standout projects:</p>
+    </div><br><br><br>
+
+    <section class="bg1">
+        {% comment %} {% for n in servicesData %} {% endcomment %}
+        <div class="sm">
+            <h1>AI-Based Healthcare Assistant</h1><br>  
+            {% comment %} {{n.service_title}} should use in the section where you have to show the dynamic content {% endcomment %}
+            <p>This project focuses on creating a smart assistant to help doctors diagnose patients based on symptoms input. It utilizes natural language processing (NLP) and predictive modeling to suggest possible conditions and recommend treatment options.</p><br><hr><br>
+            <p class="techused">Technologies Used</p>
+            <button class="btn"><p>NLP</p></button>
+            <button class="btn"><p>TensorFlow</p></button>
+            <button class="btn"><p>Flask</p></button><br><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+        </div>
+        {% comment %} {% endfor %} {% endcomment %}
+        <div class="sm">
+            <h1>Crop Yield Prediction</h1><br>
+            <p>Predicting crop yields based on weather data, soil types, and other agricultural inputs. This model is designed to help farmers plan better and ensure a higher yield by optimizing agricultural practices.</p><br><hr><br>
+            <p class="techused">Technologies Used</p>
+            <button class="btn"><p>Scikit-learn</p></button>
+            <button class="btn"><p>Pandas</p></button>
+            <button class="btn"><p>Matplotlib</p></button><br><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+        </div>
+        <div class="sm">
+            <h1>Real-Time Traffic Prediction</h1><br>
+            <p>This AI-powered system uses historical and live traffic data to predict traffic congestion in urban areas. It's designed to assist in planning travel routes and optimizing traffic management.</p><br><hr><br>
+            <p class="techused">Technologies Used</p>
+            <button class="btn"><p>Python</p></button>
+            <button class="btn"><p>Keras</p></button>
+            <button class="btn"><p>OpenCV</p></button><br><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+        </div>
+    </section><br><br><br>
+
+    <section class="bg1">
+        <div class="sm">
+            <h1>Smart Personal Finance Manager</h1><br>
+            <p>An AI-based system that helps individuals track their expenses, set budgets, and receive recommendations on how to optimize their spending patterns based on monthly income.</p><br><hr><br>
+            <p class="techused">Technologies Used</p>
+            <button class="btn"><p>Python</p></button>
+            <button class="btn"><p>Flask</p></button>
+            <button class="btn"><p>TensorFlow</p></button><br><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+        </div>
+        <div class="sm">
+            <h1>Autonomous Drone Navigation for Rescue Missions</h1><br>
+            <p>A project focused on building an autonomous drone system capable of navigating through disaster-hit areas to find survivors, detect hazards, and assist in rescue missions.</p><br><hr><br>
+            <p class="techused">Technologies Used</p>
+            <button class="btn"><p>ROS</p></button>
+            <button class="btn"><p>OpenCV</p></button>
+            <button class="btn"><p>Tello SDK</p></button><br><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+        </div>
+        <div class="sm">
+            <h1>Speech Emotion Recognition</h1><br>
+            <p>An AI-powered application that can recognize emotions from speech, which can be applied in customer service, healthcare, and other areas where understanding emotional tone is critical.</p><br><hr><br>
+            <p class="techused">Technologies Used</p>
+            <button class="btn"><p>Keras</p></button>
+            <button class="btn"><p>LibROSA</p></button>
+            <button class="btn"><p>TensorFlow</p></button><br><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+        </div>
+    </section>
+    <br><br>
+
+    {% comment %} {% include "Footer.html"%} {% endcomment %}
+</body>
+</html>
+{% endblock  %}

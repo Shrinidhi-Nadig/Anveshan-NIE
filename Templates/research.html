@@ -1,0 +1,49 @@
+{% extends "Base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="/static/css/research.css">
+    
+</head>
+<body>
+    {% comment %} {% include "Header.html" %} {% endcomment %}
+
+    <div class="heading">
+        <h1>Our Research</h1>
+        <br>
+        <p>At ANVESHAN, we strive to contribute to the advancement of artificial intelligence and</p>
+        <p>machine learning by tackling complex real-world challenges. Here are some of our</p>
+        <p>notable research projects:</p><br><br><br>
+    </div>
+
+    <div class="researchdata">
+        <section class="pro1div">
+            <h1>Plant Disease Detection Using AI</h1>
+            <p id="pp">This research aims to help farmers detect plant diseases at an early stage by analyzing images of crops using AI. By identifying signs of disease</p>
+            <p id="pp">before they become widespread, we hope to reduce crop loss and increase agricultural efficiency.</p><br>
+            <hr>
+            <br><br>
+            <p><b>Technologies Used</b></p><br>
+            <div class="btns">
+                <button class="btn"><p id="p">Convolutional Neural Networks (CNN)</p></button>
+                <button class="btn"><p id="p">TensorFlow</p></button>
+                <button class="btn"><p id="p">OpenCV</p></button>
+            </div><br>
+            <button class="btn" id="viewongit"><a href=""></a>View on GitHub 💻</button>
+            <br><br>
+            <p><b>Research Paper</b></p>
+            <div class="researchbtn"><br>
+                <a href=""><button class="view">📄 View Paper</button></a>
+                <a href="" download="/Notes/optical fiber module1.pdf"><button class="down">⬇️ Download PDF</button></a>
+            </div>
+        </section>
+    </div>
+
+    {% comment %} {% include "Footer.html"%} {% endcomment %}
+</body>
+</html>
+{% endblock  %}

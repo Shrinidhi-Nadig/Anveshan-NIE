@@ -1,0 +1,55 @@
+{% extends "Base.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/anveshan.css">
+    
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    {% comment %} {% include "Header.html" %} {% endcomment %}
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Exploring the Frontiers of AI and ML</h2>
+            <hr>
+            <hr>
+            <br><br>
+            <p>Welcome to ANVESHAN, the AI, ML, and Research Club of The National Institute of Engineering. Our mission is to empower students and enthusiasts by providing a platform where they can explore the latest advancements in artificial intelligence and machine learning. We believe in the power of technology to transform lives and solve real-world challenges, and our club is dedicated to fostering innovation and collaboration in this exciting field.</p>
+            <br>
+            <p>At ANVESHAN, we engage in various projects that leverage AI and ML technologies, focusing on practical applications that can make a difference. We encourage our members to dive deep into research, share their findings, and contribute to the growing body of knowledge in AI and ML. Through workshops, discussions, and collaborative projects, we aim to inspire the next generation of tech leaders.</p>
+            <a href="/about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <section id="home" class="hero">
+        <form method="post" action="{% url 'subscribers' %}">
+            {% csrf_token %}
+            <div class="hero-content" id="subscribe">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest news, events, and insights by subscribing to our newsletter.</p>
+                <!-- <label for="">email</label> -->
+                <input class="subscribeemail" type="text" name="name" placeholder="Enter your Name" required><br><br>
+                <input class="subscribeemail" type="email" name="email" placeholder="Enter your email address" required><br><br>
+                <button type="submit" class="btn">Subscribe</button>
+            </div>
+        </form>
+
+    </section>
+    
+
+    {% comment %} {% include "Footer.html"%} {% endcomment %}
+</body>
+</html>
+{% endblock  %}

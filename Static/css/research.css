@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+}
+.heading{
+    text-align: center;
+    padding-top: 130px;
+}
+.heading h1{
+    font-size:3rem;
+}
+.heading p{
+    font-size:1.2rem;
+    color: #ccc;
+}
+.pro1div{
+    height: 500px;
+    width: 1200px;
+    background-color:  #232323;
+    border-radius: 15px;
+    padding-left: 20px;
+    position: absolute;
+    left: 100px;
+}
+.pro1div h1{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.pro1div p{
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+.btn {
+    background: #333;
+    color: #4d4d4d;
+    padding:5px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.btn p{
+    font-size: 15px;
+    color: #ffffff;
+}
+#p{
+    padding: 4px;
+}
+.btns{
+    padding-left: 40px;
+}
+#viewongit{
+    padding: 8px;
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+}
+.view{
+    padding: 10px;
+    background-color: rgb(76, 76, 239);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.down{
+    padding: 10px;
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#pp{
+    color: #ccc;
+    padding-left: 20px;
+}
+.researchbtn{
+    position: absolute;
+    left: 60px;
+}
+.researchdata{
+    height: 600px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}

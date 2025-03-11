@@ -1,0 +1,117 @@
+{% extends "Base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="/static/css/events.css">
+    
+</head>
+<body>
+    {% comment %} {% include "Header.html" %} {% endcomment %}
+
+    <div class="heading">
+        <h1>Our Events</h1>
+        <br>
+        <p>Stay updated on our upcoming and past events, workshops, conferences, and</p>
+        <p>hackathons!</p>
+    </div><br><br><br>
+
+    <h1 class="uphead">📅 Upcoming Events</h1><br>
+    <div class="updiv">
+        <h2 id="one">Hackathon: Innovate Next! 48-Hour </h2>
+        <h2>Hackathon</h2><br>
+        <p>Join ANVESHAN's first-ever 48-Hour Hackathon! Showcase your coding skills and come up with innovative solutions in AI, ML, and tech innovation.</p><br>
+        <div class="upinnerdiv"><br>
+            <p><b>📅 February 25, 2025</b></p>
+            <p><b>🕐 9:00 AM (Feb 25) - 9:00 AM (Feb 27)</b></p>
+            <p><b>📍 NIE Innovation Lab</b></p>
+        </div><br><br><br><br><br><br><br>
+        <hr><br>
+        <div class="highlight">
+            <h3>Highlights:</h3><br>
+            <ul>
+                <li>AI and ML-based problem statements</li>
+                <li>Mentorship from industry experts</li>
+                <li>Exciting prizes for top teams</li>
+                <li>Live coding and rapid prototyping</li>
+                <li>Closing ceremony with awards</li>
+            </ul>
+        </div><br><hr>
+        <h5 id="opendate">Team Registration: Opens on February 1, 2025.</h5>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1 class="uphead">📅 Past Events</h1><br>
+    <section class="evsec">
+        <div class="updiv">
+            <h2 id="one">Workshop: AI in the Real World with an Ex-</h2>
+            <h2>NVIDIA Expert</h2><br>
+            <p>This hands-on workshop will focus on practical AI applications, led by an Ex-NVIDIA AI Expert. Engage in real-world projects under expert guidance.</p><br>
+            <div class="upinnerdiv"><br>
+                <p><b>📅 January 15, 2025</b></p>
+                <p><b>🕐 10:00 AM - 4:00 PM</b></p>
+                <p><b>📍 NIE Computer Science Lab</b></p>
+            </div><br><br><br><br><br><br><br>
+            <hr><br>
+            <div class="highlight">
+                <h3>Highlights:</h3><br>
+                <ul>
+                    <li>Introduction to advanced AI techniques</li>
+                    <li>Hands-on sessions on deep learning with NVIDIA hardware</li>
+                    <li>Networking with industry professionals</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="updiv" id="updiv">
+            <h2 id="one">Conference / Symposium: Paper</h2>
+            <h2>Presentation on AI and ML Innovations</h2><br>
+            <p>We are hosting a conference on AI and ML Innovations. The symposium will feature paper presentations on cutting-edge research and emerging trends in AI and ML.</p><br>
+            <div class="upinnerdiv"><br>
+                <p><b>📅 December 10, 2024</b></p>
+                <p><b>🕐 9:00 AM - 5:00 PM</b></p>
+                <p><b>📍 NIE Conference Hall, Mysuru</b></p>
+            </div><br><br><br><br><br><br><br>
+            <hr><br>
+            <div class="highlight">
+                <h3>Highlights:</h3><br>
+                <ul>
+                    <li>Paper presentations on AI/ML advancements</li>
+                    <li>Interactive Q&A sessions</li>
+                    <li>Panel discussions with industry experts</li>
+                    <li>Best paper awards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="upsec">
+        <div class="updiv">
+            <h2 id="one">Opening Ceremony of ANVESHAN</h2><br>
+            <p>Join us as we officially launch ANVESHAN, the AI, ML, and Research Club at The National Institute of Engineering! The event will feature keynote speakers, introductions to upcoming club activities, and a showcase of some of our exciting projects.</p><br>
+            <div class="upinnerdiv"><br>
+                <p><b>📅 October 20, 2024</b></p>
+                <p><b>🕐 10:00 AM - 12:00 PM</b></p>
+                <p><b>📍 NIE Auditorium, Mysuru</b></p>
+            </div><br><br><br><br><br><br><br>
+            <hr><br>
+            <div class="highlight">
+                <h3>Highlights:</h3><br>
+                <ul>
+                    <li>Keynote address by industry experts</li>
+                    <li>Introduction to ANVESHAN's vision and mission</li>
+                    <li>Showcase of ongoing projects</li>
+                    <li>Networking session</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {% comment %} {% include "Footer.html"%} {% endcomment %}
+
+</body>
+</html>
+{% endblock  %}

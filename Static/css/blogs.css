@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+}
+.mainblog{
+    width: 800px;
+    height: 1900px;
+    background-color: #000000;
+    text-align: left;
+    position: absolute;
+    left: 310px;
+}
+.mainblog h1{
+    font-size: 2.3rem;
+}
+.mainblog h2{
+    font-size: 1.8rem;
+}
+#intro{
+    padding-top: 100px;
+}
+.pfont{
+    font-size: 1.15rem;
+    color: #ccc;
+}
+#h4{
+    padding-left: 200px;
+}
+.applicationlist{
+    padding-left: 40px;
+    color: #ccc;
+}
+.hero {
+    color: #ffffff;
+    padding-top: 2000px;
+    padding: 4rem 1.5rem;
+    text-align: center;
+
+}
+.hero-content {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-top: 1900px;
+}
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #b1b1b1;
+}
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#subscribe{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.subscribeemail{
+    width: 270px;
+    height: 40px;
+    border-color: rgb(255, 255, 255);
+    background-color: #333;
+    color: white;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+marquee a{
+    color: white;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}

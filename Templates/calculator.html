@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12">
+            <form method="post">
+                {% if error %}
+                <div class="alertalert-danger" role="alert">
+                    Please enter the value
+                </div>
+                {% endif %}
+                {% csrf_token %}
+                <label>sub-1</label>
+                <input type="text" name="m1" class="form-control" value="{{m1}}"><br>
+
+                <label>sub-2</label>
+                <input type="text" name="m2" class="form-control" value="{{m2}}"><br>
+
+                <label>sub-3</label>
+                <input type="text" name="m3" class="form-control" value="{{m3}}"><br>
+
+                <label>sub-4</label>
+                <input type="text" name="m4" class="form-control" value="{{m4}}"><br>
+
+                <label>sub-5</label>
+                <input type="text" name="m5" class="form-control" value="{{m5}}"><br>
+
+                <label>sub-6</label>
+                <input type="text" name="m6" class="form-control" value="{{m6}}"><br>
+
+                <button type="submit">Calculate</button><br><br>
+
+                <label>Total</label>
+                <input type="text" class="form-control" name="total" value="{{total}}"><br><br>
+
+                <label>Percentage</label>
+                <input type="text" class="form-control" name="evenodd" value="{{percentage}}%">
+
+                <label>Grade</label>
+                <input type="text" class="form-control" name="grade" value="{{grade}}">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

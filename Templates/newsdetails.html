@@ -1,0 +1,19 @@
+{% extends "Base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/static/css/newsdetails.css">
+    
+</head>
+<body>
+    {% comment %} {% include "Header.html" %}
+    {% include "Footer.html"%} {% endcomment %}
+    <h1>{{newsDetails.news_title}}</h1>
+    <p>{{newsDetails.news_disc | safe }}</p>
+</body>
+</html>
+{% endblock  %}

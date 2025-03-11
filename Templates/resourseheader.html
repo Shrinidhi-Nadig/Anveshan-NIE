@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANVESHAN</title>
+    <link rel="stylesheet" href="/static/css/resourseheader1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="anveshanlogo" src="/static/img/anveshan logo-photoaidcom-cropped.png" height="80px" alt="Anveshan Club logo">
+            <img class="nielogo" src="/static/img/Screenshot 2025-02-15 125103.png" height="100px" alt="NIE College logo">
+            <!-- <h1>Anveshan</h1> -->
+            <!-- <h5>AIML Club Of The National Institute Of Engineering Mysore</h5> -->
+        </div>
+        <nav>
+            <ul>
+                <li class="{% if request.path == '/' %} active {% endif %}"><a href="{% url 'home'%}">Home</a></li>
+                <li class="{% if request.path == '/about/' %} active {% endif %}"><a href="{% url 'about'%}">About Us</a></li>
+                <li class="{% if request.path == '/projects/' %} active {% endif %}"><a href="{% url 'projects'%}">Projects</a></li>
+                <li class="{% if request.path == '/research/' %} active {% endif %}"><a href="{% url 'research'%}">Research</a></li>
+                <li class="{% if request.path == '/events/' %} active {% endif %}"><a href="{% url 'events'%}">Events</a></li>
+                <li class="{% if request.path == '/resources' %} active {% endif %}"><a href="{% url 'resourse'%}">Resourse</a></li>
+                <li class="{% if request.path == '/blogs/' %} active {% endif %}"><a href="{% url 'blogs'%}">Blog</a></li>
+                <li class="{% if request.path == '/members/' %} active {% endif %}"><a href="{% url 'members'%}">Members</a></li>
+                {% url 'contacts' as url %}
+                <li class="{% if request.path == url %} active {% endif %}"><a href="{{ url }}">Contact Us</a></li>
+                <li class="{% if request.path == '/newsletter/' %} active {% endif %}"><a href="{% url 'newsletter'%}">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

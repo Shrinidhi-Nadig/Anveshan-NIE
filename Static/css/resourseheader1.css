@@ -1,0 +1,52 @@
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    font-family: Arial, sans-serif;
+}
+body {
+    color: #ffffff;
+    background-color: #000000;
+    /* line-height: 1.6; */
+}
+header {
+    background: #000000;
+    color: #fff;
+    padding: 3.5rem 0;
+    text-align: center;
+}
+header .logo h1 {
+    font-size: 2rem;
+}
+header .logo p {
+    font-size: 1rem;
+    color: #ccc;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.anveshanlogo{
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+.nielogo{
+    position: absolute;
+    right:50px;
+    top: 20px;
+}
+header .active a{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: aqua;
+}

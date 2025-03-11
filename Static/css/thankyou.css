@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color: white;
+}
+.thank{
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+    padding-left:px;
+    padding-top: 100px;
+}
+.thank h2{
+    position: relative;
+    text-align: center;
+}
+.thank h1{
+    position: relative;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body:hover ::-webkit-scrollbar {
+    display: block;
+}
+body {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4CAF50 #f0f0f0; /* Thumb & Track color */
+}
